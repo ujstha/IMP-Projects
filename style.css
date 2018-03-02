@@ -1,0 +1,339 @@
+body {
+	margin: 0;
+	background-attachment: fixed;
+	background-color: rgba(247,147,30,0.5);
+	text-align: center;
+}
+
+/*mobile version starts here */
+#container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding-top: 5px;
+	padding-bottom: 10px;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+/* css style for the navigation bar and the elements inside it */
+header {
+	height: 50px;
+	grid-column: 1 / 4;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgba(36,58,91,1); 
+	border-radius: 5px;
+}
+/*ids are used eventhough it has unique tags because the effect is more for ids then other*/
+#head-content li {
+	display: inline-block;
+	margin: 10px;
+	font: bold 15px Raleway, Arial;
+	line-height: 30px;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+#head-content li:hover {
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+}
+#head-content li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*css style for section part where details about the portfolio is written */
+section {
+	grid-column: 1 / 4;
+	height: auto;
+	margin-top: 10px;
+	text-align: left;
+	padding-left: 10px;
+	background-color: rgba(36,58,91,1);
+	border-radius: 3px;
+}
+#detail-content p.about-what {
+	font: bold 18px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 1.5px;
+}
+#detail-content p.portfolio-description {
+	font: normal 12px Raleway, Arial;
+	color: #fff;
+	line-height: 20px;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+/* css style for the middle contents containing labs work */
+main {
+	display: grid;
+	grid-column: 1 / 4;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 5px;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+/*ids are used eventhough it has unique tags because the effect is more for ids then other*/
+#main-content a {
+	font: normal 20px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	line-height: 26px;
+	text-align: center;
+	text-decoration: none;
+}
+#main-content a:hover p {
+	transform: rotate(360deg);
+	transition: transform .3s ease-in-out;
+}
+#main-content a div {
+	padding: 1%;
+	background-color: rgba(247,147,30,1);
+	border-radius: 5px;
+}
+
+/*footer or contact form styling starts here*/
+#bottom-content {
+	grid-column: 1 / 4;
+	margin-top: 10px;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	background-color: rgba(36,58,91,1); 
+}
+#contact-me {
+	width: 100%;
+	font: bold 18px Raleway, Arial;
+	letter-spacing: .5px;
+	text-align: left;
+}
+#contact-title {
+	font: bold 20px Raleway, Arial;
+	letter-spacing: .5px;
+	text-align: center;
+}
+#svg{
+	display: inline-block;
+	float: right;
+	margin: 20px;
+	padding: 2px;
+	padding-bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 3px;
+}
+#svg li {
+	display: block;
+	padding: 5px;
+	list-style-type: none;
+}
+#svg li a:hover img {
+	transform: scale(1.2);
+	transition: transform .3s ease-in-out;
+}
+a.svg-image { margin: 5px; }
+.label-and-input {
+	display: block;
+	margin-top: 10px;
+}
+.form-label {
+	display: block;
+	margin-bottom: 5px;
+}
+.form-input {
+	max-width: 400px;
+	height: 20px;
+	padding-left: 5px;
+	font-size: 15px;
+	border: 2px solid rgba(4,90,224,.8);
+}
+.textarea {
+	overflow: auto;
+	height: 100px;
+	resize: none;
+}
+#contact-me button {
+	width: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: rgba(4,90,224,.6);
+}
+#contact-me button:hover {
+	background-color: rgba(4,90,224,1);
+	cursor: pointer;
+}
+.submit-button a{
+	color: #fff;
+	font: 15px Raleway, Arial;
+}
+/*footer ends here*/
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	#container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding-top: 5px;
+		padding-bottom: 10px;
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	/* css style for the navigation bar and the elements inside it */
+	header {
+		height: 70px;
+		grid-column: 1 / 4;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: rgba(36,58,91,1); 
+		border-radius: 5px;
+	}
+	/*ids are used eventhough it has unique tags because the effect is more for ids then other*/
+	#head-content li {
+		display: inline-block;
+		margin: 15px;
+		font: bold 20px Raleway, Arial;
+		line-height: 35px;
+		text-decoration: none;
+		letter-spacing: 2px;
+	}
+	#head-content li:hover {
+		border-bottom: 2px solid #fff;
+		cursor: pointer;
+	}
+	#head-content li a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	/*css style for section part where details about the portfolio is written */
+	section {
+		grid-column: 1 / 4;
+		height: auto;
+		margin-top: 30px;
+		text-align: left;
+		padding-left: 10px;
+		background-color: rgba(36,58,91,1);
+		border-radius: 3px;
+	}
+	#detail-content p.about-what {
+		font: bold 22px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	#detail-content p.portfolio-description {
+		font: normal 16px Raleway, Arial;
+		color: #fff;
+		line-height: 24px;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	/* css style for the middle contents containing labs work */
+	main {
+		display: grid;
+		grid-column: 1 / 4;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 40px;
+		margin-top: 30px;
+		text-align: center;
+		border-radius: 5px;
+	}
+	/*ids are used eventhough it has unique tags because the effect is more for ids then other*/
+	#main-content a {
+		font: normal 25px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		text-align: center;
+		text-decoration: none;
+	}
+	#main-content a div {
+		padding: 70px;
+		background-color: rgba(247,147,30,1);
+		border-radius: 5px;
+	}
+
+	/*footer or contact form styling starts here*/
+	#bottom-content {
+		grid-column: 1 / 4;
+		margin-top: 30px;
+		padding: 10px;
+		color: #fff;
+		text-align: center;
+		border-radius: 5px;
+		background-color: rgba(36,58,91,1); 
+	}
+	#contact-me {
+		width: 100%;
+		font: bold 18px Raleway, Arial;
+		letter-spacing: .5px;
+		text-align: left;
+	}
+	#contact-title {
+		font: bold 25px Raleway, Arial;
+		letter-spacing: .7px;
+		text-align: center;
+	}
+	#svg{
+		display: inline-block;
+		float: right;
+		margin: 20px;
+		padding: 2px;
+		padding-bottom: 0;
+		background-color: rgba(0,0,0,0.7);
+		border-radius: 3px;
+	}
+	#svg li {
+		display: inline-block;
+		padding: 5px;
+		list-style-type: none;
+	}
+	#svg li a:hover img { transform: scale(1.2); }
+	a.svg-image { margin: 5px; }
+	.label-and-input {
+		display: block;
+		margin-top: 15px;
+	}
+	.form-label {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.form-input {
+		width: 400px;
+		height: 27px;
+		padding-left: 5px;
+		font-size: 20px;
+		border: 2px solid rgba(4,90,224,.8);
+	}
+	.textarea {
+		overflow: auto;
+		height: 100px;
+		resize: none;
+	}
+	#contact-me button {
+		width: 100px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 10px;
+		background-color: rgba(4,90,224,.6);
+	}
+	#contact-me button:hover {
+		background-color: rgba(4,90,224,1);
+		cursor: pointer;
+	}
+	.submit-button a{
+		color: #fff;
+		font: 18px Raleway, Arial;
+	}
+	/*footer ends here*/
+}
+/*media query for desktop version ends here*/
+
+
+

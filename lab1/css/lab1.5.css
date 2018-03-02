@@ -1,0 +1,156 @@
+/*section part css style, where definition are written*/
+section { grid-column: 1 / 4; }
+/*fifth div inside section tag styling starts here */
+#dynamic-html-container {
+	margin-top: 10px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+}
+#dynamic-html-container #dynamic-html-title { 
+	padding: 1px 5px;
+	background-color: rgba(247,147,30,1);
+}
+#dynamic-html-container #dynamic-html-title p.dynamic-html {
+	margin: 8px;
+	font: bold 16px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+#dynamic-html-container div.dynamic-html-descriptions {
+	padding: 5px;
+	padding-bottom: 0;
+	background-color: rgba(119,136,153,.3);
+	border-radius: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+#dynamic-html-container div.dynamic-html-descriptions p {
+	font: bold 13px Raleway, Arial;
+	letter-spacing: .7px;
+	word-spacing: 1.5px;
+}
+/*input and button design here*/
+#add-person {
+	width: 90%;
+	height: 20px;
+	padding-right: 5px;/*for text inside input box*/
+	padding-left: 5px;
+	font: 16px Raleway, Arial;
+	border-radius: 3px;
+	border: 3px solid rgba(0,0,0,.4);
+}
+button.add-person-button {
+	margin-top: 5px; /* to separate button from input in smaller screens*/
+	margin-bottom: 10px;
+	font: bold 17px Raleway, Arial;
+	border-radius: 3px;
+	background-color: rgba(119,136,153,.8);
+}
+button.add-person-button:hover {
+	color: #fff;
+	background-color: rgba(119,136,153,.5);
+	cursor: pointer;
+}
+.go-arrow {
+	width: 0;
+	height: 0;
+	float: right;
+	margin-top: 3px;
+	margin-left: 4px;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid green;
+}
+div.dynamic-html-descriptions #added-person {
+	margin-bottom: 8px;
+	padding-left: 20px;
+	font: 15px Raleway, Arial;
+	color: #fff;
+	background-color: rgba(247,147,30,1);
+	border-radius: 4px;
+}
+/*fifth div styling ends here */
+
+/*section styling ends here */
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	/*section part css style, where definition are written*/
+	section { grid-column: 1 / 4; }
+	/*fifth div inside section tag styling starts here */
+	#dynamic-html-container {
+	margin-top: 20px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+	}
+	#dynamic-html-container #dynamic-html-title { background-color: rgba(247,147,30,1); }
+	#dynamic-html-container #dynamic-html-title p.dynamic-html {
+		margin: 0;
+		padding: 10px;
+		font: bold 18px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	#dynamic-html-container div.dynamic-html-descriptions {
+		padding: 5px;
+		padding-bottom: 0;
+		background-color: rgba(119,136,153,.3);
+		border-radius: 5px;
+		border-bottom: 1px solid lightgrey;
+	}
+	#dynamic-html-container div.dynamic-html-descriptions p {
+		font: bold 16px Raleway, Arial;
+		letter-spacing: .7px;
+		word-spacing: 1.5px;
+	}
+	/*input and button design here*/
+	#add-person {
+		width: 40%;
+		height: 25px;
+		padding-right: 5px;/*for text inside input box*/
+		padding-left: 5px;
+		font: 18px Raleway, Arial;
+		border: 3px solid rgba(0,0,0,.4);
+		border-radius: 3px;
+	}
+	button.add-person-button {
+		margin-left: 10px;
+		margin-bottom: 20px;
+		font: bold 22px Raleway, Arial;
+		border-radius: 3px;
+		background-color: rgba(119,136,153,.8);
+	}
+	button.add-person-button:hover {
+		color: #fff;
+		background-color: rgba(119,136,153,.5);
+		cursor: pointer;
+	}
+	.go-arrow {
+		width: 0;
+		height: 0;
+		float: right;
+		margin-top: 5px;
+		margin-left: 4px;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 8px solid green;
+	}
+	div.dynamic-html-descriptions #added-person {
+		margin-bottom: 10px;
+		padding-left: 25px;
+		font: 22px Raleway, Arial;
+		color: #fff;
+		background-color: rgba(247,147,30,1);
+		border-radius: 4px;
+	}
+	/*fifth div styling ends here */
+
+	/*section styling ends here */
+}
+/*media query for desktop version ends here*/

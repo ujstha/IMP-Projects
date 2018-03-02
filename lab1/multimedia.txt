@@ -1,0 +1,42 @@
+1.Definitions:
+	a. HTML
+	Hyper Text Markup Language is a coding language that is widely used to develope your web pages.
+	It is also called the building block of HTML pages. All the elemnts are represented by tags, such
+	"heading", "paragraph", "table" etc. The browser does not show the tags but use them to render the
+	content of the pages. The basic structure of HTML page be like this.
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>
+		</title>
+	</head>
+	<body>
+
+	</body>
+	</html>
+
+	b. CSS
+	CSS stands for Cascading Style Sheets is web language that is used to 
+	add the styles on web pages. In a simple way it can be said that, CSS is 
+	a language that describes the styles of HTML document. For exmaple it can 
+	set the background color, font colors, fort family and sizes etc.
+
+	C. Javascript
+	Javascript oftne short form of JS is a hight level and dynamic programming language.
+	Along side HTML and CSS, Javascript is one of the three core of world wide web content
+	production. We can say HTML is to define the content of web pages and CSS is to specify
+	layout of the web pages, whereas, Javasript is to program the behaviour of the web pages.   
+	
+	d. HTTP
+	Hypertest Transfer Protocol(HTTP) application protocol used by the World Wide Web 
+	It is the foundation of data communication of the world World Wide World. It defines how messages
+	are formatted and transmitted, and also what actions Web servers and browsers should take in response.
+	
+	e. HTML5
+	The largest version of Hypertext Markup Language is HTML5. It does everything from animation to apps to
+ 	build incredibly complicated applications that run in your browser. It doses not require any additional
+	software such as broswer plugnis.
+
+	f. Dynamic HTML (DHTML)
+	Dynamic HTML or simoly DHTML is a collective term fora combination of Hypertest Markup Language tags and
+	options that make web pages more animated and interactive than previous versions.

@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	background-attachment: fixed;
+	background-color: rgba(247,147,30,0.5);
+	text-align: center;
+}
+
+/*mobile version starts here */
+#container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding-top: 5px;
+	padding-bottom: 10px;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+/*design for navbar with hovering effect*/
+/*mobile version*/
+div#nav-bar {
+	grid-column: 1 / 4;
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: rgba(36,58,91,1); 
+	border-radius: 3px;
+}
+div#nav-bar > ul > li {
+	display: inline-block;
+	padding-right: 10px;
+	font: bold 16px Raleway, Arial;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+div#nav-bar a {
+	color: #fff;
+	text-decoration: none;
+}
+div#nav-bar a:hover { 
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+}
+ul {list-style: none;}
+ul li {position: relative;}
+li ul { display: none;}
+/*it selects the anchor tag inside the list tag*/
+ul li a { display: block; }
+li:hover > ul {
+	display: block;
+	position: absolute;
+}
+ul ul li {
+	width:150px;
+	margin-bottom: 5px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background-color: rgba(36,58,91,0.5);
+	text-transform: none;
+	border-radius: 3px;
+}
+ul ul ul {
+	top: 10%;
+	right: 105%;
+}
+/*mobile version for nav bar ends here*/
+/* css style for the navigation bar and the elements inside it */
+header {
+	grid-column: 1 / 4;
+	text-align: center;
+	background-color: rgba(36,58,91,1); 
+	border-radius: 3px;
+}
+/*ids are used eventhough it has unique tags because the effect is more for ids then other*/
+#head-content li {
+	display: inline-block;
+	margin: 5px;
+	font: bold 12px Raleway, Arial;
+	line-height: 20px;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+#head-content li#current-lab { font: bold 20px Raleway, Arial; }
+#head-content a {
+	color: #fff;
+	text-decoration: none;
+}
+#back-to-index { float: left; }
+#back-to-index:hover a {
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+}
+.back-arrow {
+	width: 0;
+	height: 0;
+	float: left;
+	margin: 5px; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #fff;
+}
+#next-lab { float: right; }
+#next-lab:hover a {
+	border-bottom: 2px solid #fff;
+	cursor: pointer;
+}
+.next-arrow {
+	width: 0;
+	height: 0;
+	float: right;
+	margin: 5px; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #fff;
+}
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	#container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		padding-top: 5px;
+		padding-bottom: 10px;
+		max-width: 1200px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	/* css style for the navigation bar and the elements inside it */
+	header {
+		grid-column: 1 / 4;
+		text-align: center;
+		background-color: rgba(36,58,91,1); 
+		border-radius: 3px;
+	}
+	/*ids are used eventhough it has unique tags because the effect is more for ids then other*/
+	#head-content li {
+		display: inline-block;
+		margin: 5px;
+		font: bold 15px Raleway, Arial;
+		line-height: 25px;
+		text-decoration: none;
+		letter-spacing: 1px;
+	}
+	#head-content li#current-lab { font: bold 23px Raleway, Arial; }
+	/*it selects the anchor tag inside the list tag*/
+	#head-content a {
+		color: #fff;
+		text-decoration: none;
+	}
+	#back-to-index { float: left; }
+	#back-to-index:hover a {
+		border-bottom: 2px solid #fff;
+		cursor: pointer;
+	}
+	.back-arrow {
+		width: 0;
+		height: 0;
+		float: left;
+		margin: 8px; 
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-right: 5px solid #fff;
+	}
+	#next-lab { float: right; }
+	#next-lab:hover a {
+		border-bottom: 2px solid #fff;
+		cursor: pointer;
+	}
+	.next-arrow {
+		width: 0;
+		height: 0;
+		float: right;
+		margin: 8px; 
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		border-left: 5px solid #fff;
+	}
+	/*desktop version for nav bar*/
+	div#nav-bar > ul > li {
+		padding-right: 30px;
+		font: bold 20px Raleway, Arial;
+	}
+	ul ul ul {
+		top: 10%;
+		left: 80%;
+	}
+	/*desktop version for nav bar ends here*/
+}
+/*media query for desktop version ends here*/

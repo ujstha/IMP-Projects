@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- title of the webpage -->
+	<title>Interactive Multimedia Programming</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!--linked EXTERNAL CSS -->
+	<link rel="stylesheet" type="text/css" href="../all-labs-style.css"><!--its a common style for all labs-->
+	<link rel="stylesheet" type="text/css" href="css/lab3.1.css">
+</head>
+<body>
+	<!-- the div that contains all the elements-->
+	<div id="container">
+		<!-- its a navbar for all the sub pages for usability purpose.-->
+		<div id="nav-bar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a>Labs&nbsp&#8681</a>
+					<ul>
+						<li><a>Lab 1&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab1/lab1.1.html">Lab 1.1</a></li>
+								<li><a href="../lab1/lab1.2.html">Lab 1.2</a></li>
+								<li><a href="../lab1/lab1.3.html">Lab 1.3</a></li>
+								<li><a href="../lab1/lab1.4.html">Lab 1.4</a></li>
+								<li><a href="../lab1/lab1.5.html">Lab 1.5</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 2&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab2/lab2.1.html">Lab 2.1</a></li>
+								<li><a href="../lab2/lab2.2.html">Lab 2.2</a></li>
+								<li><a href="../lab2/lab2.3.html">Lab 2.3</a></li>
+								<li><a href="../lab2/lab2.4.html">Lab 2.4</a></li>
+								<li><a href="../lab2/lab2.5.html">Lab 2.5</a></li>
+								<li><a href="../lab2/lab2.6.html">Lab 2.6</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 3&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab3/lab3.1.html">Lab 3.1</a></li>
+								<li><a href="../lab3/lab3.2.html">Lab 3.2</a></li>
+								<li><a href="../lab3/lab3.3.html">Lab 3.3</a></li>
+								<li><a href="../lab3/lab3.4.html">Lab 3.4</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 4&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab4/lab4.1.html">Lab 4.1</a></li>
+								<li><a href="../lab4/lab4.2.html">Lab 4.2</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 5&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab5/lab5.1.html">Lab 5.1</a></li>
+								<li><a href="../lab5/lab5.2.html">Lab 5.2</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 6&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab6/lab6.1.html">Lab 6.1</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="../index.html#bottom-content">Contact</a></li>
+			</ul>
+		</div>
+		<!-- header contains the top bar of the page with navigations -->
+		<header id="head-content">
+			<li id="back-to-index"><a href="lab3.html"><div class="back-arrow"></div>Lab 3</a></li>
+			<li id="current-lab">Lab 3.1</li>
+			<li id="next-lab"><a href="lab3.2.html">Lab 3.2<div class="next-arrow"></div></a></li>
+		</header>
+		<!-- before main, it contains the details info of what this website's about -->
+		<section id="detail-content">
+			<!-- this is first main div inside section tag that contains assigned definitions -->
+			<div id="definitions-container">
+				<div id="define-title"><p class="short-definitions">3.1 Web Sockets</p></div>
+				<div class="rwd-description">
+					<p>Nowadays we have very elegant JavaScript APIs we can use to create "Interactive
+					Multimedia Applications". <a href="http://www.html5rocks.com/en/tutorials/websockets/basics/">This article</a> was used to answer few questions in this lab set.</p>
+				</div>
+				<div class="define-each">
+					<li><strong>What kind of problems web sockets solve? In what kind of situations you should use them?</strong> </li>
+					<p>Web Sockets solve the problem of the browser of needing to ask for the data from the server in certain interval of time to load the latest information from the server, by making it possible to connect between the web browser and a server. Both sides were able to send and receive data anytime without making any request over and over again.</p>
+					<p>Web Sockets can be used in projects where real-time updates are required. Some of the projects where web sockets can be used are:<br>Live Game Scores, Multiplayer Games, etc.</p>
+				</div>
+				<div id="define-title"><p class="short-definitions">Chatting Application</p></div>
+				<div class="rwd-description">
+					<li><strong>Conversations:</strong></li>
+					<div id="chat"></div>
+					<div id="form">
+						<input class="input" id="input" type="text" placeholder="Write your message here...">
+						<br>
+						<input class="button" id="btn" type="submit" name="Submit" value="Send">
+					</div>
+					<div id="connection"></div>
+				</div>
+				<div class="define-each">
+					<li><strong>What happens if you send a message: "LOGO" in above application?</strong> </li>
+					<p>When a message "LOGO" is sent in above application, we actually receive different logos.</p>
+				</div>
+			</div>
+		</section>
+		<!-- main contents in the middle of the page after header
+		* in this case it contains labs
+		* it is designed with css-grid -->
+		<main id="main-content">
+		</main>
+		<!-- the bottom of the page -->
+		<footer id="bottom-content"></footer>
+	</div>
+
+	<script type="text/javascript" src="js/lab3.1-chat.js"></script>
+</body>
+</html>

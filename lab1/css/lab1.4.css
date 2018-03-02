@@ -1,0 +1,86 @@
+/*section part css style, where definition are written*/
+section { grid-column: 1 / 4; }
+/*forth div inside section tag styling starts here */
+#developertools-container {
+	margin-top: 10px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+}
+#developertools-container #developertools-title { 
+	padding: 1px 5px;
+	background-color: rgba(247,147,30,1);
+}
+#developertools-container #developertools-title p.developertools-documents {
+	margin: 8px;
+	font: bold 16px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+#developertools-container div.developertools-descriptions,
+#developertools-container div.developertools-example-image {
+	padding: 5px;
+	padding-bottom: 0;
+	background-color: rgba(119,136,153,.3);
+	border-radius: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+#developertools-container div.developertools-example-image img { 
+	border-radius: 5px;
+	width: 100%;
+}
+#developertools-container div.developertools-descriptions p {
+	font: bold 13px Raleway, Arial;
+	letter-spacing: .7px;
+	word-spacing: 1.5px;
+}
+/*forth div styling ends here */
+
+/*section styling ends here */
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	/*section part css style, where definition are written*/
+	section { grid-column: 1 / 4; }
+	/*forth div inside section tag styling starts here */
+	#developertools-container {
+	margin-top: 20px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+	}
+	#developertools-container #developertools-title { background-color: rgba(247,147,30,1); }
+	#developertools-container #developertools-title p.developertools-documents {
+		margin: 0;
+		padding: 10px;
+		font: bold 18px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	#developertools-container div.developertools-descriptions,
+	#developertools-container div.developertools-example-image {
+		padding: 5px;
+		padding-bottom: 0;
+		background-color: rgba(119,136,153,.3);
+		border-radius: 5px;
+		border-bottom: 1px solid lightgrey;
+	}
+	#developertools-container div.developertools-example-image img { 
+		border-radius: 5px;
+		width: 100%;
+	}
+	#developertools-container div.developertools-descriptions p {
+		font: bold 16px Raleway, Arial;
+		letter-spacing: .7px;
+		word-spacing: 1.5px;
+	}
+	/*forth div styling ends here */
+
+	/*section styling ends here */
+}
+/*media query for desktop version ends here*/

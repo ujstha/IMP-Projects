@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- title of the webpage -->
+	<title>Interactive Multimedia Programming</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!--linked EXTERNAL CSS -->
+	<link rel="stylesheet" type="text/css" href="../all-labs-style.css"><!--its a common style for all labs-->
+	<link rel="stylesheet" type="text/css" href="css/lab5.2.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- the div that contains all the elements-->
+	<div id="container">
+		<!-- its a navbar for all the sub pages for usability purpose.-->
+		<div id="nav-bar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a>Labs&nbsp&#8681</a>
+					<ul>
+						<li><a>Lab 1&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab1/lab1.1.html">Lab 1.1</a></li>
+								<li><a href="../lab1/lab1.2.html">Lab 1.2</a></li>
+								<li><a href="../lab1/lab1.3.html">Lab 1.3</a></li>
+								<li><a href="../lab1/lab1.4.html">Lab 1.4</a></li>
+								<li><a href="../lab1/lab1.5.html">Lab 1.5</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 2&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab2/lab2.1.html">Lab 2.1</a></li>
+								<li><a href="../lab2/lab2.2.html">Lab 2.2</a></li>
+								<li><a href="../lab2/lab2.3.html">Lab 2.3</a></li>
+								<li><a href="../lab2/lab2.4.html">Lab 2.4</a></li>
+								<li><a href="../lab2/lab2.5.html">Lab 2.5</a></li>
+								<li><a href="../lab2/lab2.6.html">Lab 2.6</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 3&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab3/lab3.1.html">Lab 3.1</a></li>
+								<li><a href="../lab3/lab3.2.html">Lab 3.2</a></li>
+								<li><a href="../lab3/lab3.3.html">Lab 3.3</a></li>
+								<li><a href="../lab3/lab3.4.html">Lab 3.4</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 4&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab4/lab4.1.html">Lab 4.1</a></li>
+								<li><a href="../lab4/lab4.2.html">Lab 4.2</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 5&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab5/lab5.1.html">Lab 5.1</a></li>
+								<li><a href="../lab5/lab5.2.html">Lab 5.2</a></li>
+							</ul>
+						</li>
+						<li><a>Lab 6&nbsp&#8680</a>
+							<ul>
+								<li><a href="../lab6/lab6.1.html">Lab 6.1</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="../index.html#bottom-content">Contact</a></li>
+			</ul>
+		</div>
+		<!-- header contains the top bar of the page with navigations -->
+		<header id="head-content">
+			<li id="back-to-index"><a href="lab5.1.html"><div class="back-arrow"></div>Lab 5.1</a></li>
+			<li id="current-lab">Lab 5.2</li>
+			<li id="next-lab"><a href="../lab6/lab6.html">Lab 6<div class="next-arrow"></div></a></li>
+		</header>
+		<!-- before main, it contains the details info of what this website's about -->
+		<section id="detail-content">
+			<!-- this is first main div inside section tag that contains assigned definitions -->
+			<div id="add-person-name-container">
+				<div id="add-person-name-title"><p class="add-person-name">5.2 AJAX</p></div>
+				<div class="add-person-name-descriptions">
+					<p>These articles: 
+						<a href="http://learn.jquery.com/using-jquery-core/">Article 1</a>, 
+						<a href="https://en.wikipedia.org/wiki/Ajax_(programming)">Article 2</a>, 
+						<a href="https://msdn.microsoft.com/en-us/library/bb299886.aspx">Article 3</a>, 
+						<a href="https://en.wikipedia.org/wiki/Same-origin_policy">Article 4</a>, 
+						<a href="http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about?noredirect=1&lq=1">Article 5</a> and 
+						<a href="https://www.sitepoint.com/jsonp-examples/">Article 6</a> were read thoroughly to get more idea about jQuery, AJAX and JSON which are used in this following lab set.</p>
+						<p>Below is the small application that generates person's name and email directly from <a href="https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp">json file</a>.
+					</p>
+				</div>
+				<div class="add-person-name-descriptions">
+					<button class="add-person-button" onclick="loadPersonList()">
+						Load Name and Email with AJAX<div class="go-arrow"></div>
+					</button>
+				</div>
+				<div class="add-person-name-descriptions">
+					<p><strong>Persons you have loaded:</strong></p>
+					<table id="loadedPerson">
+						<tr>
+							<th>Name</th>
+							<th>Email</th>
+						</tr>
+						<tr>
+							<td id="name-of-person"></td>
+							<td id="email-of-person"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<!-- main contents in the middle of the page after header
+		* in this case it contains labs
+		* it is designed with css-grid -->
+		<main id="main-content">
+		</main>
+		<!-- the bottom of the page -->
+		<footer id="bottom-content"></footer>
+	</div>
+
+	<!--linked javascript -->
+	<script src="js/lab5.2-ajax.js"></script>
+
+</body>
+</html>

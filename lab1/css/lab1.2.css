@@ -1,0 +1,117 @@
+/*section part css style, where definition are written*/
+section { grid-column: 1 / 4; }
+/*second div inside section tag styling starts here */
+#conventions-container {
+	margin-top: 10px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+}
+#conventions-container #convention-title { 
+	padding: 1px 5px;
+	background-color: rgba(247,147,30,1);
+}
+#conventions-container #convention-title p.coding-convention {
+	margin: 8px;
+	font: bold 16px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+#conventions-container div.convention-description,
+#conventions-container div.convention-points {
+	padding: 5px;
+	padding-bottom: 0;
+	background-color: rgba(119,136,153,.3);
+	border-radius: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+#conventions-container div.convention-description > p {
+	font: bold 13px Raleway, Arial;
+	letter-spacing: .5px;
+	word-spacing: 1.5px;
+}
+#conventions-container div.convention-points ul {
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font: bold 16px Raleway, Arial;
+	text-transform: uppercase;
+}
+#conventions-container div.convention-points ul a {
+	color: #000;
+	text-decoration: none;
+}
+#conventions-container div.convention-points ul a:hover { color: rgba(247,147,30,1); }
+#conventions-container div.convention-points li {
+	margin-left: 18px; /*for firefox */
+	padding-left: 0; /*margin-left affected this so given 0 to make it good for chrome */
+	margin-bottom: 4px;
+	font: 12px Raleway, Arial;
+	letter-spacing: .5px;
+	word-spacing: 1.5px;
+}
+/*second div styling ends here */
+
+/*section styling ends here */
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	/*section part css style, where definition are written*/
+	section { grid-column: 1 / 4; }
+	/*second div inside section tag styling starts here */
+	#conventions-container {
+	margin-top: 20px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+	}
+	#conventions-container #convention-title { background-color: rgba(247,147,30,1); }
+	#conventions-container #convention-title p.coding-convention {
+		margin: 10px;
+		font: bold 18px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	#conventions-container div.convention-description,
+	#conventions-container div.convention-points {
+		padding: 5px;
+		padding-bottom: 0;
+		background-color: rgba(119,136,153,.3);
+		border-radius: 5px;
+		border-bottom: 1px solid lightgrey;
+	}
+	#conventions-container div.convention-description > p {
+		font: bold 16px Raleway, Arial;
+		letter-spacing: .7px;
+		word-spacing: 1.5px;
+	}
+	#conventions-container div.convention-points ul {
+		padding: 0;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font: bold 18px Raleway, Arial;
+		text-transform: uppercase;
+	}
+	#conventions-container div.convention-points ul a {
+		color: #000;
+		text-decoration: none;
+	}
+	#conventions-container div.convention-points ul a:hover { color: rgba(247,147,30,1); }
+	#conventions-container div.convention-points li {
+		margin-left: 20px; /*for firefox */
+		padding-left: 0; /*margin-left affected this so given 0 to make it good for chrome */
+		margin-bottom: 4px;
+		font: 15px Raleway, Arial;
+		letter-spacing: .7px;
+		word-spacing: 1.5px;
+	}
+	/*second div styling ends here */
+
+	/*section styling ends here */
+}
+/*media query for desktop version ends here*/

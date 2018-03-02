@@ -1,0 +1,86 @@
+/*section part css style, where definition are written*/
+section { grid-column: 1 / 4; }
+/*third div inside section tag styling starts here */
+#html5-container {
+	margin-top: 10px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+}
+#html5-container #html5-title { 
+	padding: 1px 5px;
+	background-color: rgba(247,147,30,1);
+}
+#html5-container #html5-title p.html5-documents {
+	margin: 8px;
+	font: bold 16px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+#html5-container div.html5-descriptions,
+#html5-container div.html5-example-image {
+	padding: 5px;
+	padding-bottom: 0;
+	background-color: rgba(119,136,153,.3);
+	border-radius: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+#html5-container div.html5-example-image img { 
+	border-radius: 5px;
+	width: 100%;
+}
+#html5-container div.html5-descriptions p {
+	font: bold 13px Raleway, Arial;
+	letter-spacing: .7px;
+	word-spacing: 1.5px;
+}
+/*third div styling ends here */
+
+/*section styling ends here */
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	/*section part css style, where definition are written*/
+	section { grid-column: 1 / 4; }
+	/*third div inside section tag styling starts here */
+	#html5-container {
+	margin-top: 20px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+	}
+	#html5-container #html5-title { background-color: rgba(247,147,30,1); }
+	#html5-container #html5-title p.html5-documents {
+		margin: 0;
+		padding: 10px;
+		font: bold 18px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	#html5-container div.html5-descriptions,
+	#html5-container div.html5-example-image {
+		padding: 5px;
+		padding-bottom: 0;
+		background-color: rgba(119,136,153,.3);
+		border-radius: 5px;
+		border-bottom: 1px solid lightgrey;
+	}
+	#html5-container div.html5-example-image img { 
+		border-radius: 5px;
+		width: 100%;
+	}
+	#html5-container div.html5-descriptions p {
+		font: bold 16px Raleway, Arial;
+		letter-spacing: .7px;
+		word-spacing: 1.5px;
+	}
+	/*third div styling ends here */
+
+	/*section styling ends here */
+}
+/*media query for desktop version ends here*/

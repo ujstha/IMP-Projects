@@ -1,0 +1,85 @@
+/*section part css style, where definition are written*/
+section { grid-column: 1 / 4; }
+/*third div inside section tag styling starts here */
+#rwd-example-container {
+	margin-top: 10px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+}
+#rwd-example-container #rwd-example-title { 
+	padding: 1px 5px;
+	background-color: rgba(247,147,30,1);
+}
+#rwd-example-container #rwd-example-title p.rwd-example-documents {
+	margin: 8px;
+	font: bold 16px Raleway, Arial;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+}
+#rwd-example-container div.rwd-example-descriptions,
+#rwd-example-container div.rwd-example-image {
+	padding: 5px;
+	padding-bottom: 0;
+	background-color: rgba(119,136,153,.3);
+	border-radius: 5px;
+	border-bottom: 1px solid lightgrey;
+}
+#rwd-example-container div.rwd-example-image img { border-radius: 5px; }
+#rwd-example-container div.rwd-example-image img.desktop-view { width: 100%; }
+#rwd-example-container div.rwd-example-image img.mobile-view { width: 70%; }
+#rwd-example-container div.rwd-example-descriptions p {
+	font: bold 13px Raleway, Arial;
+	letter-spacing: .7px;
+	word-spacing: 1.5px;
+}
+/*third div styling ends here */
+
+/*section styling ends here */
+
+/*mobile version styling ends here*/
+
+/*media query is used to make responsive
+* it is for desktop version, it starts here.*/
+@media screen and (min-width: 720px){
+	/*section part css style, where definition are written*/
+	section { grid-column: 1 / 4; }
+	/*third div inside section tag styling starts here */
+	#rwd-example-container {
+	margin-top: 20px;
+	text-align: left;
+	border: 2px solid rgba(247,147,30,1);
+	border-radius: 5px;
+	}
+	#rwd-example-container #rwd-example-title { background-color: rgba(247,147,30,1); }
+	#rwd-example-container #rwd-example-title p.rwd-example-documents {
+		margin: 0;
+		padding: 10px;
+		font: bold 18px Raleway, Arial;
+		color: #fff;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+	#rwd-example-container div.rwd-example-descriptions,
+	#rwd-example-container div.rwd-example-image {
+		padding: 5px;
+		padding-bottom: 0;
+		background-color: rgba(119,136,153,.3);
+		border-radius: 5px;
+		border-bottom: 1px solid lightgrey;
+	}
+	#rwd-example-container div.rwd-example-image { text-align: center; }
+	#rwd-example-container div.rwd-example-image img { border-radius: 5px; }
+	#rwd-example-container div.rwd-example-image img.mobile-view { width: auto; }
+	#rwd-example-container div.rwd-example-image img.desktop-view { width: 80%; }
+	#rwd-example-container div.rwd-example-descriptions p {
+		font: bold 16px Raleway, Arial;
+		letter-spacing: .7px;
+		word-spacing: 1.5px;
+	}
+	/*third div styling ends here */
+
+	/*section styling ends here */
+}
+/*media query for desktop version ends here*/

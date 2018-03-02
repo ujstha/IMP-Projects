@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- title of the webpage -->
+	<title>Interactive Multimedia Programming</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<!--linked EXTERNAL CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- the div that contains all the elements-->
+	<div id="container">
+		<!-- header contains the top bar of the page with navigations -->
+		<header id="head-content">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#main-content">Labs</a></li>
+				<li><a href="#bottom-content">Contact</a></li>
+		</header>
+		<!-- before main, it contains the details info of what this website's about -->
+		<section id="detail-content">
+			<p class="about-what">What is it about?</p>
+			<p class="portfolio-description">This webpage, designed by <b>Mr. Ujjawal Shrestha</b>, is a study-portfolio project of the course "Interactive Multimedia Programming" assigned by <b>Mr. Veikko Tapaninen</b> to group <b>DIN16SP.</b> Tools used in this project were: <b>HTML, CSS and JavaScript. CSS-Grids</b> were also used for styling. The lab works of this project can be found below:
+			</p>
+		</section>
+		<!-- main contents in the middle of the page after header
+		* in this case it contains labs
+		* it is designed with css-grid -->
+		<main id="main-content">
+			<a href="lab1/lab1.html"><div><p>Lab 1</p></div></a>
+			<a href="lab2/lab2.html"><div><p>Lab 2</p></div></a>
+			<a href="lab3/lab3.html"><div><p>Lab 3</p></div></a>
+			<a href="lab4/lab4.html"><div><p>Lab 4</p></div></a>
+			<a href="lab5/lab5.html"><div><p>Lab 5</p></div></a>
+			<a href="lab6/lab6.html"><div><p>Lab 6</p></div></a>
+		</main>
+		<!-- the bottom of the page -->
+		<footer id="bottom-content">
+			<div class="form-container" id="contact-me">
+				<form method="post" name="myemailform" action="send-email.php">
+					<div id="contact-title">Contact Ujjawal</div>
+
+					<hr>
+
+					<div id="svg">
+						<li>
+							<a href="https://www.facebook.com/ujwal.shrestha.104" class="svg-image" title="facebook" target="_blank"> <img src="svg/facebook.svg" alt="facebook" style="width:50px;height:50px;"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/ujwals1996" class="svg-image" title="twitter" target="_blank"> <img src="svg/twitter.svg" alt="twitter" style="width:50px;height:50px;"></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/ujwalss/" class="svg-image" title="instagram" target="_blank"> <img src="svg/instagram.svg" alt="instagram" style="width:50px;height:50px;"></a>
+						</li>
+					</div>
+					<div class="label-and-input">
+						<label class="form-label" for="name">Your Name:</label>
+						<input class="form-input" name="name" type="text">
+					</div>
+					<div class="label-and-input">
+						<label class="form-label" for="email">Your E-mail:</label>
+						<input class="form-input" name="email" type="email">
+					</div>
+					<div class="label-and-input">
+						<label class="form-label" for="message">Your Message:</label>
+						<textarea class="form-input textarea" name="message" rows="3"></textarea>
+					</div>
+					<button class="submit-button" type="submit"><a>Submit</a></button>
+				</form>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>
