@@ -28,7 +28,7 @@ function loadFlickrImage() {
 
   });
 
-    document.getElementById('loop').innerHTML = "You Searched for: " + tagName ;
+    document.getElementById('loop').innerHTML = "You Searched for: " + tagName;
     document.getElementById('tag-name').value = "";
 
 };
