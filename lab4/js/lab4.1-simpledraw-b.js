@@ -5,8 +5,8 @@ var canvas,
 	snapshot;
 
 function getCanvasCoordinates(event){
-	var x = event.clientX - canvas.getBoundingClientRect().left,
-		y = event.clientY - canvas.getBoundingClientRect().top;
+	var x = event.clientX - canvas.getBoundingClientRect().left,//x axis starting drawing
+		y = event.clientY - canvas.getBoundingClientRect().top;//y axis starting drawing
 
 		return {x: x, y:y};
 }
